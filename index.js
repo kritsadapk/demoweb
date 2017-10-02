@@ -11,6 +11,12 @@ app.get('/test', (req, res) => {
 app.get('/test2', (req, res) => {
     res.send('OK BB2');
 })
+
+app.all('/help1', (req, res) => {
+    res.send('ok1');
+});
+
+
 app.all('/help', (req, res) => {
     res.send('ok');
 });

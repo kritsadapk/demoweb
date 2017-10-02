@@ -5,8 +5,8 @@ app.get('/', (req, res) => {
     res.send('Hello');
 });
 
-app.all('/health', (req, res) => {
+app.all('/help', (req, res) => {
     res.send('ok');
 });
 
-app.listen(8080);
+app.listen(8099);

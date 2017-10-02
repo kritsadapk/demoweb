@@ -5,8 +5,13 @@ app.get('/', (req, res) => {
     res.send('Hello');
 });
 
+app.get('/test', (req, res) => {
+    res.send('OK BB');
+})
+
 app.all('/help', (req, res) => {
     res.send('ok');
 });
+
 
 app.listen(8099);
